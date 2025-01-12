@@ -1,0 +1,14 @@
+{
+  "name": "ibanezgabriel.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+     "compile:sass": "sass sass/main.scss src/styles.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.83.1"
+  }
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
+
+$primary-color: #051937;
+$secondary-color: #fff;
+$accent-color: #EBB928;
+$ff-primary: 'Poppins';
+
+*::before, *::after, *{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: $primary-color;
+    color: $secondary-color;
+    font-family: $ff-primary;
+    overflow: hidden;
+}
+.nav {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    .nav__list {
+        // border: 1px solid white;
+        width: 60vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+    }
+    .nav__links {
+        color: $secondary-color;
+        text-decoration: none;
+        padding: .8rem;
+        font-weight: 700;
+    }
+    .nav__links:hover {
+        border-radius: 1rem;
+        color: $primary-color;
+        background-color: $accent-color;
+    }
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    cursor: pointer;
+    .hero__introduction {
+        .hero__header {
+            font-size: 3rem;
+            line-height: 1.5;
+            font-weight: 900;
+        }
+        .hero__sub-header {
+            margin: .5rem 0 .5rem 0;
+            font-weight: 700;
+        }
+        .hero__paragraph {
+            width: 70vw;
+            font-weight: 400;
+        }
+        .hero__botton {
+            height: 2rem;
+            width: 5rem;
+            margin-top: 1rem;
+            background-color: $primary-color;
+            border: 2px solid $accent-color;
+            border-radius: .5rem;
+            color: $secondary-color;
+            font-weight: 700;
+            
+        }
+        .hero__github-logo {
+            height: 1.5rem;
+            width: 1.5rem;
+            margin-bottom: -.5rem;
+            margin-left: .3rem;
+        }
+    }
+}
+.img {
+    position: absolute;
+    top: 25px;
+    left: 550px;
+    height:40rem;
+    width: 40rem;
+    z-index: -1;
+}
+
+.fuck {
+    margin-top: 10rem;
+}
+
